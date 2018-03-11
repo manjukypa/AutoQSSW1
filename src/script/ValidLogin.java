@@ -1,7 +1,6 @@
 package script;
 
 import org.testng.annotations.Test;
-
 import generic.BaseTest;
 import generic.Excel;
 import page.EnterPage;
