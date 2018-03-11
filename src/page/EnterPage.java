@@ -44,7 +44,7 @@ public class EnterPage {
 	public void verifyHomePageIsDisplayed(WebDriver driver,String eTitle) {
 		String strETO = AutoUtil.getProperty(IAutoConst.CONFIG_PATH,"ETO");
 		long ETO = Long.parseLong(strETO);
-		WebDriverWait wait=new WebDriverWait(driver, 12);
+		WebDriverWait wait=new WebDriverWait(driver,ETO);
 		try {
 			wait.until(ExpectedConditions.titleIs(eTitle));
 			Reporter.log("HomePage is Displayed",true);
