@@ -1,5 +1,14 @@
-<suite name="Suite">
-  <test name="Test">
+<suite name="Suite" parallel="tests">
+  <test name="TestOnFirefox">
+  <parameter name="ip" value="192.168.1.77"/>
+  <parameter name="browser" value="firefox"/>
+    <packages>
+	<package name="script"/>
+    </packages>
+  </test> 
+   <test name="TestOnChrome">
+  <parameter name="ip" value="192.168.1.77"/>
+  <parameter name="browser" value="chrome"/>
     <packages>
 	<package name="script"/>
     </packages>

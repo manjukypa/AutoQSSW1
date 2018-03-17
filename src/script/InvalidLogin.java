@@ -1,7 +1,6 @@
 package script;
 
 import org.testng.annotations.Test;
-
 import generic.BaseTest;
 import generic.Excel;
 import page.LoginPage;
@@ -9,7 +8,7 @@ import page.LoginPage;
 public class InvalidLogin extends BaseTest {
 
 	@Test(priority=2,groups= {"login"})
-	public void testInvalidLogin() throws InterruptedException {
+	public void testbInvalidLogin() throws InterruptedException {
 		int rc=Excel.getRowCount(XL_PATH, "InvalidLogin");
 		for(int i=1;i<=rc;i++) {
 		String un=Excel.getValue(XL_PATH,"InvalidLogin",i,0);
